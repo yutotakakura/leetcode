@@ -14,13 +14,30 @@ class Solution:
         23/23 cases passed (138 ms)
         Your runtime beats 71.68 % of python3 submissions
         Your memory usage beats 95.11 % of python3 submissions (17.2 MB)
-        """
+
         cache = {}
         for i, num in enumerate(numbers):
             val = target - num
             if val in cache:
                 return [cache[val]+1, i+1]
             cache[num] = i
+        """
+
+        """
+        23/23 cases passed (147 ms)
+        Your runtime beats 27.99 % of python3 submissions
+        Your memory usage beats 19.35 % of python3 submissions (17.4 MB)
+        """
+        l, r = 0, len(numbers) - 1
+        while l < r:
+            total = numbers[l] + numbers[r]
+            if target < total:
+                r -= 1
+            elif target > total:
+                l += 1
+            else:
+                return [l + 1, r + 1]
+
         
 # @lc code=end
 
