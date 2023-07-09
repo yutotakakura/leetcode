@@ -10,6 +10,10 @@ class Solution:
         """
         My first answer
         It's a small chacnge of 1.two-sum.py
+
+        23/23 cases passed (138 ms)
+        Your runtime beats 71.68 % of python3 submissions
+        Your memory usage beats 95.11 % of python3 submissions (17.2 MB)
         """
         cache = {}
         for i, num in enumerate(numbers):
