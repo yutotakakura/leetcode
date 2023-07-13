@@ -22,11 +22,31 @@ class Solution:
             cache.add(num)
         """
 
+        """
+        Practice of Hash Table
+
+        Operation
+        Average Time Complexity
+
+        Search
+        O(1)
+
+        Insert
+        O(1)
+
+        Remove
+        O(1)
+        """
+
+        # Initialize an empty dictionary and assign it to the variable 'cache'
         cache = {}
-        for i, num in enumerate(nums):
-            val = target - num
-            if val in cache:
-                return [cache[val], i]
-            cache[num] = i
+        # Start a for loop iterate 'num' over each 'num' in the variable 'nums'
+        for index, num in enumerate(nums):
+            # If (target - num) is seen in cache
+            if (target - num) in cache:
+                # We can return index of target - num and index of num
+                return [cache[target - num], index]
+            # Add the key-value pair "num"-"index" to the variable 'cache'
+            cache[num] = index
 # @lc code=end
 
