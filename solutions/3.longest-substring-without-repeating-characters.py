@@ -9,7 +9,7 @@ class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
 
         """
-        Practice of Array
+        Practice of Array & String
         
         Array 
 
@@ -33,6 +33,24 @@ class Solution:
 
         Remove (at the end)
         O(1)
+
+
+        String
+
+        Operation
+        Average Time Complexity
+
+        Access
+        O(1)
+
+        Search
+        O(n)
+
+        Insert
+        O(n)
+
+        Remove
+        O(n)
         """
 
         """
